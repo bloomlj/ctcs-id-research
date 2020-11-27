@@ -11,8 +11,8 @@ void setup() {
 void loop() {
   int x = digitalRead(7);
   if(!x){
-    Serial1.println('A');
+    Serial1.print('d');    
     Serial.println(x);
   }
-  delay(500);
+  delay(50);
 }

@@ -31,7 +31,9 @@ void loop() {
     // read incoming serial data:
     char inChar = Serial1.read();
     // Type the next ASCII value from what you received:
-   Keyboard.write(inChar);
-   //Serial.println(inChar);
+   Keyboard.press(inChar);
+   delay(50);
+   Keyboard.release(inChar);
+   Serial.println(inChar);
   }
 }
